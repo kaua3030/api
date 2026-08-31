@@ -22,4 +22,10 @@ app.get("/", (request, response) => {
   });
 });
 
+app.get('/healt', (req, res) =>{
+  res.status(200).json({
+    status: 'OK'
+  });
+});
+
 module.exports = app;
