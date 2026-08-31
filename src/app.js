@@ -22,7 +22,8 @@ app.get("/", (request, response) => {
   });
 });
 
-app.get('/healt', (req, res) =>{
+// CORRIGIDO: De /healt para /health
+app.get('/health', (req, res) =>{
   res.status(200).json({
     status: 'OK'
   });
